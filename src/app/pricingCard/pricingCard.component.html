@@ -4,49 +4,49 @@
     <h6 class="card-price text-center">{{myData.price}}<span class="period">/month</span></h6>
     <hr>
     <ul class="fa-ul">
-      <li [ngClass]="{'text-muted':!myData.user.available}">
+      <li [ngClass]="{'text-muted':!myData.user.available}" [ngStyle]="{'font-weight' : myData.user.bold ? 'bold' : '400'}">
         <span class="fa-li">
           <i [ngClass]="myData.user.available?'fa fa-check':'fa fa-times'"></i>
-        </span><b>{{myData.user.data}}</b>
+        </span>{{myData.user.data}}
       </li>
-      <li [ngClass]="{'text-muted':!myData.storage.available}">
+      <li [ngClass]="{'text-muted':!myData.storage.available}" [ngStyle]="{'font-weight' : myData.storage.bold ? 'bold' : '400'}">
         <span class="fa-li">
           <i [ngClass]="myData.storage.available?'fa fa-check':'fa fa-times'"></i>
         </span>{{myData.storage.data}}
       </li>
-      <li [ngClass]="{'text-muted':!myData.projectA.available}">
+      <li [ngClass]="{'text-muted':!myData.projectA.available}" [ngStyle]="{'font-weight' : myData.projectA.bold ? 'bold' : '400'}">
         <span class="fa-li">
           <i [ngClass]="myData.projectA.available?'fa fa-check':'fa fa-times'"></i>
         </span>{{myData.projectA.data}}
       </li>
-      <li [ngClass]="{'text-muted':!myData.access.available}">
+      <li [ngClass]="{'text-muted':!myData.access.available}" [ngStyle]="{'font-weight' : myData.access.bold ? 'bold' : '400'}">
         <span class="fa-li">
           <i [ngClass]="myData.access.available?'fa fa-check':'fa fa-times'"></i>
         </span>{{myData.access.data}}
       </li>
-      <li [ngClass]="{'text-muted':!myData.projectB.available}">
+      <li [ngClass]="{'text-muted':!myData.projectB.available}" [ngStyle]="{'font-weight' : myData.projectB.bold ? 'bold' : '400'}">
         <span class="fa-li">
           <i [ngClass]="myData.projectB.available?'fa fa-check':'fa fa-times'"></i>
         </span>{{myData.projectB.data}}
       </li>
-      <li [ngClass]="{'text-muted':!myData.support.available}">
+      <li [ngClass]="{'text-muted':!myData.support.available}" [ngStyle]="{'font-weight' : myData.support.bold ? 'bold' : '400'}">
         <span class="fa-li">
           <i [ngClass]="myData.support.available?'fa fa-check':'fa fa-times'"></i>
         </span>{{myData.support.data}}
       </li>
-      <li [ngClass]="{'text-muted':!myData.subdomain.available}">
+      <li [ngClass]="{'text-muted':!myData.subdomain.available}" [ngStyle]="{'font-weight' : myData.subdomain.bold ? 'bold' : '400'}">
         <span class="fa-li">
           <i [ngClass]="myData.subdomain.available?'fa fa-check':'fa fa-times'"></i>
         </span>{{myData.subdomain.data}}
       </li>
-      <li [ngClass]="{'text-muted':!myData.status.available}">
+      <li [ngClass]="{'text-muted':!myData.status.available}" [ngStyle]="{'font-weight' : myData.status.bold ? 'bold' : '400'}">
         <span class="fa-li">
           <i [ngClass]="myData.status.available?'fa fa-check':'fa fa-times'"></i>
         </span>{{myData.status.data}}
       </li>
     </ul>
     <div class="d-grid">
-      <button href="#" class="btn btn-primary text-uppercase">Button</button>
+      <a href="#" class="btn btn-primary text-uppercase">Button</a>
     </div>
   </div>
 </div>
